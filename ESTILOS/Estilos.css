@@ -135,7 +135,11 @@ input{
     display: flex;
     justify-content: space-around;
     width:100%;
+    height: 40px;
     margin: 10px;
+}
+#pagess ul li{
+width: 100px;
 }
 
 .paginas{
@@ -149,8 +153,8 @@ input{
 }
 
 .paginas:hover{
-    width: 110%;
-    font-size: 25px;
+    transform: scale(1.1);
+    font-size: 21px;
     color: #7fffd4;
 }
 
@@ -264,7 +268,7 @@ main{
   }
 
 #gridimg .sectionimagen1{
-    width: 100%;
+    width: 90%;
     grid-area: foto1;
     object-fit: cover;
     overflow: hidden;
@@ -273,51 +277,48 @@ main{
   }
 
 #gridimg .sectionimagen1:hover{
-    width: 110%;
+    transform: scale(0.9);
 }
 
 #gridimg .sectionimagen2{
-    width: 100%;
+    width: 90%;
     grid-area: foto2;
     object-fit: cover;
     overflow: hidden;
     max-height: 360px;
-    transition: width 1s;
+    transition: all 1s;
     padding: 10px 0px 0px 0px;
 }
   
 #gridimg .sectionimagen2:hover{
-    width: 110%;
-    overflow: hidden;
+    transform: scale(0.9);
 }
 
 #gridimg .sectionimagen3{
-    width: 100%;
+    width: 90%;
     grid-area: foto3;
     object-fit: cover;
     overflow: hidden;
     max-height: 340px;
-    transition: width 1s;
+    transition: all 1s;
 }
   
 #gridimg .sectionimagen3:hover{
-    width: 110%;
-    overflow: hidden;
+    transform: scale(0.9);
 }
 
 #gridimg .sectionimagen4{
-    width: 100%;
+    width: 90%;
     grid-area: foto4;
     object-fit: cover;
     overflow: hidden;
     max-height: 360px;
-    transition: width 1s;
+    transition: all 1s;
     padding: 10px 0px 0px 0px;
 }
   
 #gridimg .sectionimagen4:hover{
-    width: 110%;
-    overflow: hidden;
+transform: scale(0.9);
 }
 
 #gridimg .imagen1{
@@ -325,12 +326,11 @@ main{
     width: 100%;
     object-fit: cover;
     overflow: hidden;
-    transition: width 1s;
+    transition: all 1s;
 }
 
 #gridimg .imagen1:hover{
-    width: 90%;
-    overflow: hidden;
+    transform: scale(0.9);
 }
   .numeros1{
       list-style: none;
@@ -463,12 +463,20 @@ main{
       padding: 15px;
   }
 
+  .mod p{
+      padding-top: 20px;
+      display: flex;
+      width: auto;
+      height: 40px;
+      justify-content: center;
+  }
+
   .mod img{
       transition: all 0.5s;
   }
 
   .mod img:hover{
-      width: 300px;
+      transform: scale(1.1);
   }
 
   #modelo1{
@@ -497,12 +505,21 @@ main{
     padding: 15px;
 }
 
+.mod2 p{
+    padding-top: 20px;
+    display: flex;
+    width: auto;
+    height: 40px;
+    justify-content: center;
+}
+
+
 .mod2 img{
     transition: all 0.5s;
 }
 
 .mod2 img:hover{
-    width: 300px;
+    transform: scale(1.1);
 }
 
 #modelo4{
@@ -531,12 +548,21 @@ main{
     padding: 15px;
 }
 
+.mod3 p{
+    padding-top: 20px;
+    display: flex;
+    width: auto;
+    height: 40px;
+    justify-content: center;
+}
+
+
 .mod3 img{
     transition: all 0.5s;
 }
 
 .mod3 img:hover{
-    width: 300px;
+    transform: scale(1.1);
 }
 
 #modelo7{
