@@ -115,6 +115,10 @@ main{
     animation-name: degradado;
     animation-duration: 25s;
     animation-iteration-count: infinite;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 25px;
+    opacity: 90%;
 }
 
 .lectorfiscal{
@@ -122,7 +126,8 @@ main{
 }
 
 .legal{
-    width: 800px;
+    width: auto;
+    max-width: 800px;
 }
 
 footer{
@@ -156,7 +161,168 @@ justify-content: center;
 
 .contact{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
     width: 70%;
 }
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+#gridimg{
+    display: grid;
+    grid-template-columns: 360px 360px 360px 360px;
+    grid-template-rows: 340px 340px;
+    max-width: 100%;
+    max-height: fit-content;
+    grid-template-areas: 'fotocentro fotocentro foto1 foto3'
+    'fotocentro fotocentro foto4 foto2';
+    justify-content: space-around;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+    grid-gap:2px;
+    margin: 2px;
+  }
+
+#gridimg .sectionimagen1{
+    width: 100%;
+    grid-area: foto1;
+    object-fit: cover;
+    overflow: hidden;
+    max-width: 360px;
+    max-height: 340px;
+    transition: all 0.5s;
+  }
+
+#gridimg .sectionimagen2{
+    width: 100%;
+    grid-area: foto2;
+    object-fit: cover;
+    overflow: hidden;
+    max-width: 360px;
+    max-height: 340px;
+    transition: all 0.5s;
+}
+  
+#gridimg .sectionimagen3{
+    width: 100%;
+    grid-area: foto3;
+    object-fit: cover;
+    overflow: hidden;
+    max-width: 360px;
+    max-height: 340px;
+    transition: all 0.5s;
+}
+  
+#gridimg .sectionimagen4{
+    width: 100%;
+    grid-area: foto4;
+    object-fit: cover;
+    overflow: hidden;
+    max-width: 360px;
+    max-height: 340px;
+    transition: all 0.5s;
+}
+
+#gridimg .imagen1{
+    grid-area: fotocentro;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.sectionimagen1:hover{
+    transform: scale(0.9);
+}
+
+.sectionimagen2:hover{
+    transform: scale(0.9);
+}
+
+.sectionimagen3:hover{
+    transform: scale(0.9);
+}
+
+.sectionimagen4:hover{
+    transform: scale(0.9);
+}
+
+.imagen1:hover{
+    transform: scale(0.9);
+}
+
+.centralizar{
+    display: flex;
+    justify-content: center;
+}
+
+.tabla{
+    background-image: url(../IMAGES/pp1.jpg);
+    width: auto;
+    overflow: hidden;
+}
+
+@media only screen and (max-width:768px){
+
+    #gridimg{
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: auto 400px 400px;
+        max-width: 768px;
+        max-height: fit-content;
+        grid-template-areas: 
+        'fotocentro fotocentro'
+        'foto1 foto3'
+        'foto4 foto2';
+        object-fit: cover;
+        overflow: hidden;
+        grid-gap: 5px;
+        margin: 2px;
+      }
+      
+      #gridimg .sectionimagen1{
+        width: 100%;
+        grid-area: foto1;
+        object-fit: cover;
+        overflow: hidden;
+        padding-top: 10px;
+      }
+    
+    #gridimg .sectionimagen2{
+        width: 100%;
+        grid-area: foto2;
+        object-fit: cover;
+        overflow: hidden;
+        max-width: 360px;
+    }
+      
+    #gridimg .sectionimagen3{
+        width: 100%;
+        grid-area: foto3;
+        object-fit: cover;
+        overflow: hidden;
+        padding-top: 10px;
+    }
+      
+    #gridimg .sectionimagen4{
+        width: 100%;
+        grid-area: foto4;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    #gridimg .imagen1{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        grid-area: fotocentro;
+        width: 100% ;
+        object-fit: cover;
+        overflow: hidden;
+    }
+}
+
