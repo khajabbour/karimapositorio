@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navimg{
+    animation-name: degradado;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+}
+
+@keyframes degradado {
+    0%{background-color: #b2ffff;
+    color:#7fffd4 ;}
+    12.5%{color: black;}
+    25%{background-color:#7fffd4;
+    color: black;}
+    50%{background-color:#70ff8b;
+    color: black;}
+    75%{background-color:#7fffd4;
+    color: black;}
+    87.5%{color: black;}
+    100%{background-color:#b2ffff;
+    color: #7fffd4;}
+}
+
+.redes{
+    list-style: none;
+    display: flex;
+    margin: 0px;
+}
+
+.fb1{
+    width: 40px;
+}
+
+.facebook{
+    width: 28px;
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+.facebook:hover{
+    width: 31px;
+}
+
+.twitter{
+    width:28px;
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+.twitter:hover{
+    width: 31px;
+}
+
+.youtube{
+    width: 28px;
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+.youtube:hover{
+    width: 31px;
+}
+
+.instagram{
+    width: 28px;
+    padding: 5px; 
+    transition: all 0.3s;
+}
+
+.instagram:hover{
+    width: 31px;
+}
+
+.listapages{
+    display: flex;
+    justify-content: space-around;
+}
+
+.listapages li a{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    max-width: 800px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.imagenindex{
+    border-radius: 20px;
+}
+
+.pagina{
+    transition: all 0.5s;
+}
+
+.pagina:hover{
+    transform: scale(0.9);
+    color: #7fffd4;
+}
+
+.descripcion{
+    animation-name: degradado;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 25px;
+    opacity: 90%;
+}
+
+.lectorfiscal{
+    width: 100px;
+}
+
+.legal{
+    width: auto;
+    max-width: 800px;
+}
+
+footer{
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.6rem;
+}
+
+.productos{
+    max-width: 1000px;
+}
+
+.contenedorproductos{
+display: flex;
+justify-content: center;
+}
+
+.contacto{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+    animation-name: degradado;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    text-decoration: none;
+    border-radius: 200px;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 70%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+#gridimg{
+    display: grid;
+    grid-template-columns: 360px 360px 360px 360px;
+    grid-template-rows: 340px 340px;
+    max-width: 100%;
+    max-height: fit-content;
+    grid-template-areas: 'fotocentro fotocentro foto1 foto3'
+    'fotocentro fotocentro foto4 foto2';
+    justify-content: space-around;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+    grid-gap:2px;
+    margin: 2px;
+  }
+
+#gridimg .sectionimagen1{
+    width: 100%;
+    grid-area: foto1;
+    object-fit: cover;
+    overflow: hidden;
+    max-width: 360px;
+    max-height: 340px;
+    transition: all 0.5s;
+  }
+
+#gridimg .sectionimagen2{
+    width: 100%;
+    grid-area: foto2;
+    object-fit: cover;
+    overflow: hidden;
+    max-width: 360px;
+    max-height: 340px;
+    transition: all 0.5s;
+}
+  
+#gridimg .sectionimagen3{
+    width: 100%;
+    grid-area: foto3;
+    object-fit: cover;
+    overflow: hidden;
+    max-width: 360px;
+    max-height: 340px;
+    transition: all 0.5s;
+}
+  
+#gridimg .sectionimagen4{
+    width: 100%;
+    grid-area: foto4;
+    object-fit: cover;
+    overflow: hidden;
+    max-width: 360px;
+    max-height: 340px;
+    transition: all 0.5s;
+}
+
+#gridimg .imagen1{
+    grid-area: fotocentro;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.sectionimagen1:hover{
+    transform: scale(0.9);
+}
+
+.sectionimagen2:hover{
+    transform: scale(0.9);
+}
+
+.sectionimagen3:hover{
+    transform: scale(0.9);
+}
+
+.sectionimagen4:hover{
+    transform: scale(0.9);
+}
+
+.imagen1:hover{
+    transform: scale(0.9);
+}
+
+.centralizar{
+    display: flex;
+    justify-content: center;
+}
+
+.tabla{
+    background-image: url(../IMAGES/pp1.jpg);
+    width: auto;
+    overflow: hidden;
+}
+
+@media only screen and (max-width:768px){
+
+    #gridimg{
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: auto 400px 400px;
+        max-width: 768px;
+        max-height: fit-content;
+        grid-template-areas: 
+        'fotocentro fotocentro'
+        'foto1 foto3'
+        'foto4 foto2';
+        object-fit: cover;
+        overflow: hidden;
+        grid-gap: 5px;
+        margin: 2px;
+      }
+      
+      #gridimg .sectionimagen1{
+        width: 100%;
+        grid-area: foto1;
+        object-fit: cover;
+        overflow: hidden;
+        padding-top: 10px;
+      }
+    
+    #gridimg .sectionimagen2{
+        width: 100%;
+        grid-area: foto2;
+        object-fit: cover;
+        overflow: hidden;
+        max-width: 360px;
+    }
+      
+    #gridimg .sectionimagen3{
+        width: 100%;
+        grid-area: foto3;
+        object-fit: cover;
+        overflow: hidden;
+        padding-top: 10px;
+    }
+      
+    #gridimg .sectionimagen4{
+        width: 100%;
+        grid-area: foto4;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    #gridimg .imagen1{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        grid-area: fotocentro;
+        width: 100% ;
+        object-fit: cover;
+        overflow: hidden;
+    }
+}
+
