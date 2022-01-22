@@ -1,0 +1,14 @@
+.prod{
+    @extend .header__navimg;
+    width: 180px;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 768px){
+    .centralizar{
+        justify-content: left;
+        margin: 0.5em;
+    }
+}

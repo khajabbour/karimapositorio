@@ -1,0 +1,16 @@
+$colorprincipal: #7fffd4;
+
+@mixin tamanocolor ($color, $tamano){
+    color: $color;
+    font-size: $tamano;
+}
+@mixin largoancho ($largo, $ancho){
+    height: $largo;
+    width: $ancho;
+}
+
+@mixin mobile{
+ @media mobile and (maxwidth: 768px) {
+     @content
+ }
+}

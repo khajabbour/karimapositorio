@@ -1,0 +1,50 @@
+@import "../parciales/vars";
+
+.gridimg{
+    display: grid;
+    grid-template-columns: 360px 360px 360px 360px;
+    grid-template-rows: 340px 340px;
+    max-width: 100%;
+    max-height: fit-content;
+    grid-template-areas: 
+    'imagen3 imagen3 imagen1 imagen2'
+    'imagen3 imagen3 imagen4 imagen5';
+    justify-content: space-around;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+    grid-gap:2px;
+    margin: 2px;
+    &__imagen{
+        @include largoancho (auto, 100%);
+        object-fit: cover;
+        overflow: hidden;
+        max-width: 360px;
+        max-height: 340px;
+        transition: all 0.5s;
+        &:hover{
+            transform: scale(0.97);
+        }
+    }
+    &__imagencentro{
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        transition: all 0.5s;
+        &:hover{
+            transform: scale(0.97);
+        }
+    }
+}
+
+  @for $i from 1 through 5{
+    //asignacion gridarea
+      .imagen#{$i}{
+          grid-area: imagen + $i
+      }
+    }
+
+.centralizar{
+    display: flex;
+    justify-content: center;
+}

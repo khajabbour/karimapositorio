@@ -1,0 +1,11 @@
+.contacto{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+    animation-name: degradado;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    text-decoration: none;
+    border-radius: 200px;
+}

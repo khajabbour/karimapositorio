@@ -4,11 +4,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../ESTILOS/style.css">
+    <meta name="description" content="Sitio de la mejor lencería de Argentina radicada en Buenos Aires"/>
+    <meta name="keywords" content="Femenina, Lenceria, mujer, ropa interior, lingerie"/>
+    <link rel="stylesheet" type="text/css" href="../scss/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Hello, world!</title>
+    <title>login</title>
 
   </head>
   <header>
@@ -17,24 +19,23 @@
         ¡3 Y 6 CUOTAS ABONANDO CON MERCADO PAGO!
     </P>
           <!-- redes sociales y extras -->
-    <nav class="navimg mb-0">
-                <ul class="redes">
-                    <li><a href="https://www.twitter.com" target="blanc"><img class="twitter" src="../IMAGES/twitter.png" alt=""></a></li>
-                    <li><a href="https://www.instagram.com" target="blanc"><img class="instagram" src="../IMAGES/instagram.png"alt=""></a></li>
-                    <li><a href="https://www.facebook.com" target="blanc"><img class="facebook" src="../IMAGES/facebook.png" alt=""></a></li>
-                    <li><a href="https://www.youtube.com" target="blanc"><img class="youtube" src="../IMAGES/youtube.png" alt=""></a></li>
-                </ul>
-                <ul class="redes listapages">
-                    <li><a class="p-3" href="../PAGES/Informacion.html" class="multimedia"> Talles </a></li> <!-- temporal-->
+    <nav class="header__navimg mb-0">
+      <ul class="header__redes">
+        <li><a href="https://www.twitter.com" target="blanc"><img class="header__redes__redsocial title--twitter" src="../IMAGES/twitter.png" alt=""></a></li>
+        <li><a href="https://www.instagram.com" target="blanc"><img class="header__redes__redsocial title--instagram" src="../IMAGES/instagram.png"alt=""></a></li>
+        <li><a href="https://www.facebook.com" target="blanc"><img class="header__redes__redsocial title--facebook" src="../IMAGES/facebook.png" alt=""></a></li>
+    </ul>
+                <ul class="header__redes__listapages">
+                    <li class="header__redes__listapages__multimedia"><a class="p-3 text-decoration-none text-black" href="../PAGES/Informacion.html"> Talles </a></li> <!-- temporal-->
                     <div class="vr"></div>
-                    <li><a class="p-3" href="https://www.youtube.com" class="multimedia"> Multimedia </a></li> <!-- temporal-->
+                    <li class="header__redes__listapages__multimedia"><a class="p-3 text-decoration-none text-black" href="https://www.youtube.com"> Multimedia </a></li> <!-- temporal-->
                     <div class="vr"></div>
-                    <li><a class="p-3" href=https://www.google.com.ar/maps class="locales"> Locales </a></li> <!-- temporal-->
+                    <li class="header__redes__listapages__multimedia"><a class="p-3 text-decoration-none text-black" href=https://www.google.com.ar/maps> Locales </a></li> <!-- temporal-->
                 </ul>
     </nav>
   </header>
   <body>
-    <h1 class="display-1 text-center"> KARIMA</h1>
+    <h1 class="display-1 text-center">KARIMA</h1>
                 <!-- BARRA DE NAVEGACION -->
                   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body rounded">
                     <a class="navbar-brand pagina" href="../index.html">INICIO</a>
@@ -47,7 +48,7 @@
                           <a class="nav-link" href="../PAGES/Productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="../PAGES/Galeria.html">Galeria</a>
+                          <a class="nav-link" href="../PAGES/Preguntas.html">Preguntas</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="../PAGES/Contacto.html">Contacto</a>
@@ -59,8 +60,8 @@
                     </div>
                   </nav>
                 <!-- CIERRE BARRA NAVEGACION -->
-
-                <div class="bg-dark">
+                <div class="centralizar">
+                <div class="bg-dark w-50">
                     <p class="text-center text-white fs-1">Ingresar</p>
                     <div class="form-floating mb-3 m-4">
                         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -70,9 +71,14 @@
                         <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                         <label for="floatingPassword">Password</label>
                       </div>
-                      <div class="m-4"><a href="#">Olvide mi clave</a></div>
+                      <div class="centralizar m-"> <a href="#">Olvide mi clave</a>
+                      </div>
                 </div>
-            <div class="text-center fs-1"><p>Registro</p></div>
+              </div>
+              <hr>
+        <div class="centralizar">
+          <div class="register w-50">
+            <div class="mx-4 fs-1"><p>Registro</p></div>
                 <form>
                     <div class="form-row">
                       <div class="form-group col-md-6 m-4">
@@ -120,33 +126,32 @@
                     </div>
                     <button type="submit" class="btn btn-primary m-4">Sign in</button>
                   </form>
-
+                </div>
+              </div>
           <!-- FOOTER -->
-    <footer class="bg-dark text-white">
-        <div class="legal">
-            Las adquisiciones efectuadas por medio de este sitio serán facturadas Karima SRL. La empresa no se
-            responsabiliza por la compras realizadas a terceros, ni por el uso inautorizado del nombre y/o estética de las
-            marcas comercializadas. La falta de recepción de productos por culpa y/o falta de diligencia del adquirente en
-            ningún modo impondrá la responsabilidad de la empresa. <br>
+          <footer class="bg-dark text-white">
+            <div class="footer__legal">
+                Las adquisiciones efectuadas por medio de este sitio serán facturadas Karima SRL. La empresa no se
+                responsabiliza por la compras realizadas a terceros, ni por el uso inautorizado del nombre y/o estética de las
+                marcas comercializadas. La falta de recepción de productos por culpa y/o falta de diligencia del adquirente en
+                ningún modo impondrá la responsabilidad de la empresa. <br>
+        
+                El uso de este sitio web implica la aceptación de los Términos y Condiciones de www.karima.com. Las fotos son a
+                modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la verificación de stock. Los
+                precios online para los productos presentados/publicados en www.karima.com son válidos exclusivamente para la
+                compra vía internet en la página mencionada <br>
+        
+                Copyright © 2020 Karima | Todos los derechos reservados | Powered by Khalil Jabbour
+            </div>
+            <div>
+                <img class="footer__lectorfiscal" src="../IMAGES/Data-fiscal-Web.jpg" alt="">
+            </div>
+        </footer>
+              <!-- CIERRE FOOTER -->
+              <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+              <script src="https://kit.fontawesome.com/2520ea59e9.js" crossorigin="anonymous"></script>
+      </body>
+    </html>
     
-            El uso de este sitio web implica la aceptación de los Términos y Condiciones de www.karima.com. Las fotos son a
-            modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la verificación de stock. Los
-            precios online para los productos presentados/publicados en www.karima.com son válidos exclusivamente para la
-            compra vía internet en la página mencionada <br>
-    
-            Copyright © 2020 Karima | Todos los derechos reservados | Powered by Khalil Jabbour
-        </div>
-        <div>
-            <img class="lectorfiscal" src="../IMAGES/Data-fiscal-Web.jpg" alt="">
-        </div>
-    </footer>
-          <!-- CIERRE FOOTER -->
-          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-          <script src="https://kit.fontawesome.com/2520ea59e9.js" crossorigin="anonymous"></script>
-  </body>
-</html>
-
-
-

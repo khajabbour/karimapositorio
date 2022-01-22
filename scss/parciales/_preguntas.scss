@@ -1,0 +1,10 @@
+
+.pregu{
+    @include tamanocolor ($colorprincipal, 35px)
+}
+
+@media screen and (max-width: 768px){
+    .pregu{
+        font-size: 28px;
+    }
+}
