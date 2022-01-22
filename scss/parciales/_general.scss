@@ -17,7 +17,6 @@ $redes: (
     .title--#{$red} {
         background-color: $color;
         border-radius: 10%;
-
     }
 }
 
@@ -35,6 +34,7 @@ $redes: (
     100%{background-color:#b2ffff;
     color: #7fffd4;}
 }
+
 .header{
     &__navimg{
         animation-name: degradado;
@@ -61,16 +61,19 @@ $redes: (
                 width: 31px;
             }
         }
+    
 
         &__listapages{
             display: flex;
             justify-content: space-around;
             margin: 0px;
+
             &__multimedia{
                 list-style: none;
                 }
             }
         }
+    }
 
 .descripcion{
     animation-name: degradado;
@@ -116,7 +119,7 @@ footer{
         'imagen4 imagen2';
         grid-gap: 5px;
       }
-    }
+
     .footer{
         &__legal{
             padding: 10px;
@@ -126,4 +129,4 @@ footer{
         }
     }
 }
-    
+
