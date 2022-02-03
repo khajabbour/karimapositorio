@@ -316,6 +316,9 @@ footer {
   .footer__lectorfiscal {
     padding: 10px;
   }
+  .footer_legal {
+    font-size: 0.3rem;
+  }
 }
 
 .contacto {
@@ -341,5 +344,6 @@ footer {
 .register {
   height: auto;
   display: block;
+  border-radius: 25px;
 }
 /*# sourceMappingURL=main.css.map */
